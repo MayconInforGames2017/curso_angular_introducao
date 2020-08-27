@@ -8,13 +8,15 @@ import { Component, OnInit } from '@angular/core';
 export class MeuComponente2Component implements OnInit {
 
   nome = "Santana";
-  isVisible = true;
+  isVisible = false;
   myValue = 1;
   aluno = {
     dados: {
       nome: "Maycon"
     }
   }
+
+  myList = [1, 2, 3, 4, 5];
 
   constructor() { }
 
