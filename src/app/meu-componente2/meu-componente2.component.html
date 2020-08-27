@@ -1,4 +1,7 @@
-<p>
+<p *ngIf="isVisible; else condicaoFalse ">
     {{ nome.toUpperCase() }}
     {{ aluno?.dados?.nome }}
 </p>
+<ng-template #condicaoFalse >
+    <p>Outro texto</p>
+</ng-template>
